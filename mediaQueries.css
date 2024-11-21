@@ -1,0 +1,223 @@
+/* Tablets (landscape) */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    #topNav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .malAndFemaleContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .contestant-buttons {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .criteria-buttons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .criteria-buttons button {
+        height: 40vh;
+        width: 20vw;
+    }
+
+    .scoreContainer {
+        width: 65vw;
+    }
+}
+
+/* Tablets (portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #topNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        width: 100vw; 
+        box-sizing: border-box; 
+    }
+
+    .malAndFemaleContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .contestant-buttons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .criteria-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .criteria-buttons button {
+        height: 45vh;
+        width: 30vw;
+    }
+
+    .scoreContainer {
+        width: 70vw;
+    }
+}
+
+/* Large Smartphones to smaller Tablets (portrait) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #topNav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .criteria-buttons button {
+        height: 40vh;
+        width: 70vw;
+    }
+
+    .scoreContainer {
+        width: 80vw;
+    }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+
+    /* Handle portrait and landscape orientation */
+    .malAndFemaleContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contestant-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .criteria-buttons {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .criteria-buttons button {
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+
+    .scoreContainer {
+        width: 90vw;
+    }
+
+    /* For landscape orientation: */
+    @media only screen and (orientation: landscape) {
+        .malAndFemaleContainer {
+            grid-template-columns: repeat(2, 1fr); /* Two columns in landscape */
+            gap: 30px;
+        }
+
+        .contestant-buttons {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .criteria-buttons {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .criteria-buttons button {
+            height: 35vh;
+            width: 40vw;
+        }
+
+        .scoreContainer {
+            width: 75vw;
+        }
+    }
+}
+
+/* Smartphones Medium (portrait and landscape) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+
+    #topNav {
+        display: flex;
+        padding: 10px 20px;
+    }
+
+    .malAndFemaleContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contestant-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .criteria-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .criteria-buttons button {
+        height: 45vh;
+        width: 40vw;
+    }
+
+    .scoreContainer {
+        width: 80vw;
+    }
+
+    /* Add landscape adjustments */
+    @media only screen and (orientation: landscape) {
+        .malAndFemaleContainer {
+            grid-template-columns: repeat(2, 1fr); /* Two columns in landscape */
+            gap: 30px;
+        }
+
+        .contestant-buttons {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .criteria-buttons {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .criteria-buttons button {
+            height: 35vh;
+            width: 35vw;
+        }
+
+        .scoreContainer {
+            width: 70vw;
+        }
+    }
+}
